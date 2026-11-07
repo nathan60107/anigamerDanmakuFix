@@ -2,6 +2,12 @@
 
 修正巴哈姆特動畫瘋影片頁面（`https://ani.gamer.com.tw/animeVideo.php?sn=*`）彈幕互相重疊的問題。本專案為 userscript，主要原始碼為本 repo 的 `main.js`。
 
+**安裝**
+1. 安裝使用者腳本管理器，例如 [Tampermonkey](https://www.tampermonkey.net/) 或 [Violentmonkey](https://violentmonkey.github.io/)。
+2. 前往 Greasy Fork 安裝本腳本：https://greasyfork.org/zh-TW/scripts/604199
+
+從 Greasy Fork 安裝後，腳本管理器會自動更新到最新版本。除非要參與開發，否則不需要從本 repo 手動安裝。
+
 **彈幕為什麼會重疊**
 - **滾動彈幕追撞：** 滾動速度為 `(螢幕寬度 + 2 × 彈幕寬度) / 12 秒`，越長的彈幕跑得越快。原生的分配方式只保留到彈幕尾巴離開右邊界為止，之後同一行就讓給下一條彈幕；若下一條比較長（比較快），就會從後面追撞上前一條。
 - **不同模式互不相知：** 滾動、頂部、底部彈幕各自分配位置，因此頂部彈幕常和滾動彈幕疊在同一行。
