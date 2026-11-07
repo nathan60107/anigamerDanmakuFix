@@ -3,13 +3,15 @@
 // @description  修正動畫瘋彈幕互相重疊的問題（滾動彈幕追撞、滾動與頂部/底部彈幕互相覆蓋）。
 // @namespace    nathan60107
 // @author       nathan60107(貝果)
-// @version      1.0.0
+// @version      1.0.1
 // @homepage     https://home.gamer.com.tw/creationCategory.php?owner=nathan60107&c=425332
 // @match        https://ani.gamer.com.tw/animeVideo.php?sn=*
 // @icon         https://ani.gamer.com.tw/apple-touch-icon-144.jpg
 // @grant        none
 // @run-at       document-start
 // @noframes
+// @license      MIT
+// @supportURL   https://github.com/nathan60107/anigamerDanmakuFix/issues
 // ==/UserScript==
 
 /**
