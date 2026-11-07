@@ -6,6 +6,15 @@
 - **固定彈幕維持原位**：頂部 / 底部彈幕的位置完全不動，用多條固定彈幕排出的歌詞、圖案不會被打亂。
 - 支援彈幕速度設定、切換播放速度與拖曳進度條。
 
+## 效果對比
+開啟前
+
+![開啟前](https://raw.githubusercontent.com/nathan60107/anigamerDanmakuFix/main/images/before.png)
+
+開啟後
+
+![開啟後](https://raw.githubusercontent.com/nathan60107/anigamerDanmakuFix/main/images/after.png)
+
 ## 為什麼原本會重疊？
 - **滾動彈幕追撞**：動畫瘋的滾動彈幕越長跑得越快，但原生的排列方式只等前一條彈幕的尾巴離開右邊界，就把同一行讓給下一條。如果下一條比較長，就會從後面追撞上去。
 - **不同類型互不相知**：滾動、頂部、底部彈幕各自安排位置，所以頂部彈幕常常和滾動彈幕疊在一起。
